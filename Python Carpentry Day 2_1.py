@@ -47,7 +47,55 @@ pressure1.sort() #.sort() will just order values in ascending order
 words = ['alphabet', 'zoo', 'wallaby', 'camera', 'memory']
 words.sort() #using .sort() on string will order alphabetically
 
-## Loops ##
+## For Loops ##
+
+"I like cats"
+"I like dogs"
+"I like gold fish"
+"I like sushi"
+#What changes each time? The subjects in this case e.g. cats, dogs, etc
+subjects = ['cats', 'dogs', 'gold fish', 'sushi']
+#i is just a place holder, don't place #comments within loop, they will print
+for i in subjects: 
+    print("I really like", i)
+#wide space is necessary after first line
+for likables in subjects:
+    print("I like", likables)
+#it will print string before each object in the list
+#lists can be places directly after 'in', does not need to be a variable
+for number in [2, 3, 4]:
+    print("the value is", number)
+# you can modify the values in this process
+for number in [2, 3, 4]:
+    print("the value of the number times 2 is", number*2)
+          
+    print("something")
+#indents after will also be included
+
+primes = [2,3,5]
+
+for p in primes:
+    squared = p ** 2
+    cubed = p ** 3
+    print("original:", p, "squared:", squared, "cubed", cubed)
+# this produces new values and prints them alongside a discription of the new values
+# new values are assignedt to variables also
+
+print(cubed) #only prints last value from list
+
+sqr = []
+for pr in primes:
+    squared = pr ** 2
+    sqr.append(squared)
+    print(sqr)
+#above prints each value in the list, if you keep running it though it'll just keep making the list longer
+#range() 
+for i in range(0, len(primes), 1):
+    print("the value of i in this loop is:", primes[i])
+#above function prints the value of each value in the primes list
+#i referring to the point the loop is at in the list
+
+
 
 
 
