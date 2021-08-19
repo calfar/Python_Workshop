@@ -95,6 +95,78 @@ for i in range(0, len(primes), 1):
 #above function prints the value of each value in the primes list
 #i referring to the point the loop is at in the list
 
+#in example below, this will print the list textx twice in same list
+#changing range() values from (0,1) -> (0,3) makes it print 1 line or three lines respectively
+testx = [7,8,9,10]
+
+for x in range(0,3):
+    print(testx*2)
+    
+## if statements ##
+# for if you need a function that needs to meet intial conditions before running
+
+mass = 7.02
+
+if mass > 3.0 and mass <= 10.0:
+    print(mass, "is large")
+elif mass >= 3.0 and mass > 10.0:
+    print(mass, "is rediculously large")
+else:
+    print(mass, "is not large")
+
+# < or > next to = means less than or equal to and greater than or equal to respectively
+# and statements set two or more conditions on the following functions
+#else is, if the if statement is false, do this
+#does not need to be indented below if statement
+#elif statement for additional conditions after initial if, that way it's not trying to pass both if statements if it pases the first
+
+#if statements using lists
+masses = [2.4, 7.4, 1.1, 52.3]
+
+for i in masses:
+    if i > 3.0 and i <= 10.0:
+        print(i, "is large")
+    elif i >= 3.0 and i > 10.0:
+        print(i, "is rediculously large")
+    else:
+        print(i, "is not large")
+
+#replace the variable with i or whatever is declared as the variable in
+# the for '' in masses statement
+
+## or statements
+#while 'and' requires both statements are true
+# 'or' will proceed if one is false
+
+for i in masses:
+    if i > 3.0 or i <=10:
+        print(i, "is large")
+    elif i > 10.0:
+        print(i, 'is rediculously large')
+    else:
+        print(i, 'is not large')
+
+# the result of this is it prints 'is large' for all values, because one statement is always true
+
+velocity = [53.6, 100.44, 7.2, 10000.5]
+# == means this value equals exactly this value, rather than declaring a variable
+# or assigning a new value to a value in the list
+if masses[1] > 3.0 and masses[2] <=10 or velocity[0] == 54:
+    print('all good')
+
+#e.g. velocity[0] = 54 #this would reassign the value of value 0 to 54 in the velocity list
+
+
+
+
+
+    
+    
+
+
+
+
+
 
 
 
