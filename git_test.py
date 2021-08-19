@@ -29,3 +29,7 @@ Created on Thu Aug 19 09:45:22 2021
 #git push origin master
 #updated file should now be pushed to github
 
+# to view changes made through git, use "git log"
+
+#git pull origin master # this updates your local files with any changes made to the external repository
+
