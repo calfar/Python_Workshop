@@ -21,3 +21,11 @@ Created on Thu Aug 19 09:45:22 2021
 #put in username e.g. calfar
 #then put the token in to the password dialouge
 #this should then upload and appear on the external repository
+
+# When updating/pushing new.
+#Save file in whereever you are writing scripts
+#in git console repeat "git add ."
+#git commit -m 'comment on changes'
+#git push origin master
+#updated file should now be pushed to github
+
